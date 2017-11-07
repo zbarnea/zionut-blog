@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p class: "title">
+  <%= @article.title %>
+</p>
+
+<p>
+  <%= image_tag(@article.image_url, class: "img-fluid") %>
+</p>
+
+<p>
+  <%= @article.content %>
+</p>
+
+<%= link_to 'Edit article', edit_article_path(@article) %> |
+<%= link_to 'Delete article', @article, method: :delete, data: { confirm: 'Are you sure?' } %> |

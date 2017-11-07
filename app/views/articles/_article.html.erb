@@ -1,0 +1,9 @@
+<div class="col-sm-3">
+  <h2><%= link_to article.title, article %></h2>
+  <p><%= link_to image_tag(article.image_url, :size => "260x260"), article %></p>
+
+  <%= article.content.truncate(250) %>
+  <%= link_to "Read more", article %>
+
+
+</div>
